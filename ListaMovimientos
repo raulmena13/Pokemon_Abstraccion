@@ -1,0 +1,30 @@
+
+import java.util.ArrayList;
+public class ListaMovimientos {
+    private ArrayList<Movimiento> movimientos = new ArrayList<Movimiento>();
+    private Movimiento movimiento;
+
+    public ListaMovimientos(){
+
+        movimientos.add(new Movimiento("Cola de hierro", 40, "Electrico", 30));
+        movimientos.add(new Movimiento("Electormenta", 40, "Electrico", 30 ));
+
+        movimientos.add(new Movimiento("Chorro de vapor", 40, "Agua", 30));
+        movimientos.add(new Movimiento("Hidrobomba", 20, "Agua", 40 ));
+
+        movimientos.add(new Movimiento("Arenas ardientes", 40, "Tierra", 30));
+        movimientos.add(new Movimiento("Disparo lodo", 20, "Tierra", 20 ));
+
+        movimientos.add(new Movimiento("Adaptación", 30, "Normal", 30));
+        movimientos.add(new Movimiento("Arañazo", 20, "Normal", 40 ));
+
+    }
+    public Movimiento buscarMovimientoPorNombre (String nombre) {
+        for(Movimiento movimiento : movimientos) {
+            if(movimiento.getNombre().equals(nombre)) {
+                return movimiento;
+            }
+        }
+        return null;
+    }
+}
