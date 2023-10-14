@@ -1,0 +1,8 @@
+package Pokemon_Abstraccion;
+
+public enum Tipo {
+Acero, Agua, Bicho, Dragon, electrico,
+    Fantasma, Fuego, Hada, Hielo, lucha,
+    Normal, Planta, Psiquico, Roca, siniestro, Tierra,
+    Veneno, Volador
+}
