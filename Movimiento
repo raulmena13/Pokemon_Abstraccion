@@ -1,0 +1,47 @@
+public class Movimiento {
+    private String nombre;
+    private int puntosdeataque;
+    private String tipo;
+    private int puntosdepoder;
+
+    public Movimiento(String nombre, int puntosdeataque, String tipo, int puntosdepoder) {
+        this.nombre = nombre;
+        this.puntosdeataque = puntosdeataque;
+        this.tipo = tipo;
+        this.puntosdepoder = puntosdepoder;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getPuntosdeataque() {
+        return puntosdeataque;
+    }
+
+    public void setPuntosdeataque(int puntosdeataque) {
+        this.puntosdeataque = puntosdeataque;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public int getPuntosdepoder() {
+        return puntosdepoder;
+    }
+
+    public void setPuntosdepoder(int puntosdepoder) {
+        this.puntosdepoder = puntosdepoder;
+    }
+
+
+}
